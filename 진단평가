@@ -28,11 +28,11 @@ public class Account {
 				
 			}
 			else if(menu ==2) {
-				System.out.println("풀금할 금액: ");
-				
+				System.out.println("출금할 금액: ");
+				user.withdraw(input.nextInt());
 			}
 			else if(menu ==3) {
-				System.out.println(user.name+"님의 최종잔액은 ");
+				System.out.println(user.name+"님의 최종잔액은 "+user.balance+"입니다.");
 				break;
 			}
 			else {
@@ -51,10 +51,14 @@ public class Account {
 			System.out.println(amount+"금액이 출금되었습니다.");
 		}
 		
+		else {
+			System.out.println("잔액부족");
+		}
 	}
 
 	//돈 저축
 	void deposit(int amount) {
-		
+		balance += amount;
+		System.out.println(amount+"금액이 입금되었습니다.");
 	}
 }
