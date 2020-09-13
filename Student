@@ -1,0 +1,48 @@
+package sec01;
+
+public class Student {
+
+	String nation="대한민국", name;
+	int age; String dept; 
+//	생성자
+	Student(String name, int age){
+		//this.name = name;
+		//this.age = age;
+		this(name, age, "소공"); //중복된 코드를 줄이기위한 것들
+		
+	}
+	Student(String name, int age, String dept){
+		this.name = name;
+		this.age = age;
+		this.dept = dept;
+	}
+//	메소드
+	void setName(String name) {
+		this.name = name;
+	}
+	void setAge(int age) {
+		this.age = age;
+	}
+	void setDept(String dept) {
+		this.dept = dept;
+	}
+	
+//	getter
+	String getName() {
+		return name;
+	}
+	int getAge() {
+		return age;
+	}
+	String getDept() {
+		return dept;
+	}
+	
+	void show() {
+		System.out.println("-----------------");
+		System.out.println(name);
+		System.out.println(age);
+		System.out.println(dept);
+		System.out.println(nation);
+	}
+}
