@@ -1,0 +1,21 @@
+package sec02;
+
+import java.util.Scanner;
+
+public class PolygonTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("1.삼각형 2.정사각형 3. 직사각형");
+		Scanner input = new Scanner(System.in);
+		int select = input.nextInt();
+		System.out.println("높이: ");
+		int h = input.nextInt();
+		System.out.println("밑변: ");
+		int s = input.nextInt();
+		
+		Polygon f1 = new Polygon(select, h, s);
+		f1.area(select, h, s);
+	}
+
+}
