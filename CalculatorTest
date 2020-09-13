@@ -1,0 +1,23 @@
+package sec02;
+
+import java.util.Scanner;
+
+public class CalculatorTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		Calculator calc = new Calculator();
+		System.out.println("1. 더하기 2. 빼기 3. 곱하기 4. 나누기");
+		int select  = input.nextInt();
+		
+		System.out.println("정수 두개를 입력하시오.");
+		calc.num1 = input.nextInt();
+		calc.num2 = input.nextInt();
+	
+		System.out.println("결과: "+calc.계산기(select));
+		
+		
+		}
+
+}
