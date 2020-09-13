@@ -1,0 +1,19 @@
+package sec02;
+import java.util.Scanner;
+
+public class Polygon {
+	public Polygon(int select, int h, int s) {
+	
+		
+	}
+	void area(int n, int h, int s) {
+		int result = h*s;
+		if(n==1) {
+			result /= 2;
+		}
+		System.out.println(result);
+	}
+
+	
+
+}
