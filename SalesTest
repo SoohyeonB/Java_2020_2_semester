@@ -1,0 +1,12 @@
+package sec01;
+
+public class SalesTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Sales s1 = new Sales();
+		s1.Sales(5);
+		System.out.println(s1.getSales());
+	}
+
+}
