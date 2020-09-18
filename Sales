@@ -1,0 +1,11 @@
+package sec01;
+
+public class Sales {
+	static int iceCream;
+	void Sales(int iceCream) {
+		this.iceCream = iceCream;
+	}
+	int getSales() {
+		return ++iceCream;
+	}
+}
