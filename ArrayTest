@@ -1,0 +1,14 @@
+package sec02;
+
+public class ArrayTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Array score = new Array();
+		score.Array(5);
+		score.showArray();
+		System.out.println(score.maxArray());
+		System.out.println(score.minArray());
+	}
+
+}
